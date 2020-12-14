@@ -1,0 +1,267 @@
+@import url(https://fonts.googleapis.com/css?family=BenchNine:700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+  background-color: #6ef0f5;
+  padding: 50px 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: 'BenchNine';
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+h2 {
+  font-family: 'BenchNine';
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000;
+  display: inline
+}
+
+p {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  color: black;
+}
+
+progress {
+  display:inline-block;
+  width:190px;
+  height:20px;
+  padding:15px 0 0 0;
+  margin:0;
+  background:none;
+  border: 0;
+  border-radius: 15px;
+  text-align: left;
+  position:relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+
+progress::-webkit-progress-bar {
+  height:15px;
+  width:150px;
+  margin:0 auto;
+  background-color: #CCC;
+  border-radius: 15px;
+  box-shadow:0px 0px 6px #777 inset;
+}
+
+progress::-webkit-progress-value {
+  display:inline-block;
+  float:left;
+  height:15px;
+  margin:0px -10px 0 0;
+  background: #A31E39;
+  border-radius: 15px;
+  box-shadow:0px 0px 6px #777 inset;
+}
+
+progress:after {
+  margin:-26px 0 0 -7px;
+  padding:0;
+  display:inline-block;
+  float:left;
+  content: attr(value) '%';
+}
+
+.login {
+  position: relative;
+  z-index: 1;
+  max-width: 360px;
+  margin: 0 auto;
+  text-align: center;
+}
+.login input {
+  font-family: 'Roboto', sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.start_test_btn {
+  background-color: #1e7ba3;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  outline: none;
+  padding: 12px 158px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.start_test_btn:before,
+.start_test_btn:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.start_test_btn:before {
+  border-color: #1e7ba3;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.start_test_btn:after {
+  border-bottom-width: 2px;
+  border-color: #1e7ba3;
+  bottom: -5px;
+  right: 0px;
+}
+
+.start_test_btn:hover,
+.start_test_btn.hover {
+  background-color: #1ea34a;
+}
+
+.start_test_btn:hover:before,
+.start_test_btn.hover:before,
+.start_test_btn:hover:after,
+.start_test_btn.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.done_btn {
+  background-color: #A31E39;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  outline: none;
+  padding: 12px 159px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.done_btn:before,
+.done_btn:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.done_btn:before {
+  border-color: #A31E39;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.done_btn:after {
+  border-bottom-width: 2px;
+  border-color: #A31E39;
+  bottom: -5px;
+  right: 0px;
+}
+
+.done_btn:hover,
+.done_btn.hover {
+  background-color: #A31E39;
+}
+
+.done_btn:hover:before,
+.done_btn.hover:before,
+.done_btn:hover:after,
+.done_btn.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.cancel_btn {
+  background-color: #A31E39;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'BenchNine', Arial, sans-serif;
+  font-size: 1em;
+  font-size: 22px;
+  line-height: 1em;
+  outline: none;
+  padding: 12px 153px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.cancel_btn:before,
+.cancel_btn:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+
+.cancel_btn:before {
+  border-color: #A31E39;
+  border-top-width: 2px;
+  left: 0px;
+  top: -5px;
+}
+
+.cancel_btn:after {
+  border-bottom-width: 2px;
+  border-color: #A31E39;
+  bottom: -5px;
+  right: 0px;
+}
+
+.cancel_btn:hover,
+.cancel_btn.hover {
+  background-color: #A31E39;
+}
+
+.cancel_btn:hover:before,
+.cancel_btn.hover:before,
+.cancel_btn:hover:after,
+.cancel_btn.hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.form-check-label h2, .form-check-label input, button, .answers label, .answers input {
+  cursor: pointer;
+}

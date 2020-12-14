@@ -1,0 +1,62 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+body {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.question{
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.answers {
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+#submit, button {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  background-color: #297;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 3px;
+  cursor: pointer;
+  margin: 20px;
+  width: 100px;
+  background-color: #1e7ba3;
+}
+
+#submit:hover{
+  background-color: #333;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.active-slide{
+  opacity: 1;
+  z-index: 2;
+}
+
+.quiz-container {
+  position: relative;
+  text-align: left;
+  margin-left: 500px;
+  height: 200px;
+  width: 460px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+}

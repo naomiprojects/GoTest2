@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="Quiz">
+	<title>Test Your Knowledge!</title>
+
+	<link rel="stylesheet" href="css/quiza.css">
+    
+	
+</head>
+<body>
+    <form id="form1" class="col align-self-center" action="quizB_lead.html" method="get" accept-charset="utf-8">
+		<div class="login">
+			<h1>Fill out your contact information and press the START ASSESSMENT button to begin!</h1>
+			<input type="text" id="txtFirstName" name="first_name" placeholder="Enter First name" required autofocus>
+			<input type="text" id="txtLastName" name="last_name" placeholder="Enter Last name" required>
+			<input type="email" id="txtEmail" name="email" placeholder="Enter E-mail" required>
+		</div>
+		<br>
+		<div class="main">
+			<h1 id="h1">Are you ready to take the assessment?</h1>
+
+			<div class="form-check form-check-inline">
+			  <label class="form-check-label">
+			    <input class="form-check-input" type="radio" checked name="test" id="radioTestC" value="C" required><h2>I am ready to complete the assessment</h2>
+			  </label>
+			</div>
+			<br><br><button class="start_test_btn" id="btnStartTest">Start Assessment</button>
+		</div>
+	</form>
+</body>
+</html>
